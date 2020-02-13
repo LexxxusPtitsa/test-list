@@ -1,0 +1,201 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.selectRow:hover {
+  cursor: pointer;
+  box-shadow: inset 0px 0px 5px 0px #000;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.card__item {
+  padding: 15px;
+  width: 200px;
+  text-align: left;
+  border-bottom: 1px solid #000;
+}
+.card__item:last-child {
+  border-bottom: none;
+}
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  background-color: #303f9f;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+.headerInner {
+  width: 90%;
+  max-width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+.input {
+  padding-bottom: 15px !important;
+}
+.signIn {
+  padding-top: 10px !important;
+}
+.sign__form {
+  display: grid;
+  flex-direction: column;
+}
+.main__inner,
+.sign__form {
+  justify-content: center;
+  align-items: center;
+}
+.main__inner {
+  min-height: -webkit-fill-available;
+  display: flex;
+}
+.root__inner {
+  position: relative;
+  padding-top: 70px;
+}
+.main__tableDiv {
+  min-width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+.tableDiv {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+@media (max-width: 800px) {
+  .tableDiv {
+    width: unset;
+    width: 80%;
+  }
+}
+@media (max-width: 700px) {
+  .tableDiv {
+    width: unset;
+    min-width: 70%;
+  }
+}
+.table {
+  width: 100%;
+}
+@media (max-width: 500px) {
+    .table {
+      padding-top: 40px;
+    }
+  }
+.inputFilter {
+
+  position: fixed !important;
+  top: 8px;
+  z-index: 999;
+  align-self: center;
+  padding-bottom: 50px !important;
+}
+@media (max-width: 500px) {
+    .inputFilter {
+      top:unset;
+    }
+  }
+.inputFilter > label {
+  border-radius: 5px;
+  padding: 0 3px;
+  color: #000 !important;
+  background-color: #fff;
+  -webkit-transform: translate(14px, 12px) scale(1);
+  transform: translate(14px, 12px) scale(1);
+}
+.inputFilter > div > input {
+    color: #000 !important;
+  padding: 10.5px 14px;
+  background-color: #fff;
+    border-radius: 5px;
+}
+.inputFilter > div > fieldset {
+    border-color: unset;
+    border-radius: 5px;
+}
+.inputFilter > div > fieldset > legend {
+  width: 0.01px !important;
+}
+.main__addressDIv {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr;
+}
+.address__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0.2;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+  pointer-events: none;
+}
+.address__card,
+.edit__form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.edit__form {
+  position: relative;
+}
+.edit__button {
+  position: absolute !important;
+  z-index: 1;
+  -webkit-transition: bottom 0.9s, right 0.4s !important;
+  transition: bottom 0.9s, right 0.4s !important;
+  bottom: 50%;
+  right: 50%;
+}
+.edit__button.hidden {
+  bottom: 3%;
+  right: 3%;
+  align-self: flex-end;
+}
+@media (max-width: 550px) {
+  .main__addressDIv {
+    grid-template-columns: 1fr;
+  }
+}
